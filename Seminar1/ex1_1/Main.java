@@ -15,7 +15,7 @@ public class Main {
         List<Product> products = new ArrayList<>(Arrays.asList(new Product("pepsi", 42),
                 new Product("chocolate", 67), new Product("cola", 70)));
         vendingMachine.putProduct(products);
-        System.out.println(vendingMachine.getProduct("chocolate").toString());
+        System.out.println(vendingMachine.getProduct().toString());
 
 
     }

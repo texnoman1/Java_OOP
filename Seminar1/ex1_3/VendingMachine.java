@@ -1,23 +1,21 @@
-package Seminar1.ex1_2;
+package Seminar1.ex1_3;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-import Seminar1.ex1_2.Product;
+import Seminar1.ex1_3.Product;
 
 // Реализуйте класс Товар, содержащий данные о товаре, и ТорговыйАвтомат,  содержащий
     // в себе методы initProducts (List <Product>) сохраняющий в себе список
     // исходных продуктов и  getProduct(String name)
 
     public class VendingMachine {
-        private LinkedList<Product> products;
+        private List<Product> products;
     
-        public VendingMachine() {
-            this.products = new LinkedList<>();
-        }
+       
     
-        public void putProduct(LinkedList<Product> item) {
+        public void putProduct(List<Product> item) {
             this.products = item;
         }
     

@@ -1,4 +1,4 @@
-package Seminar1.ex1_2;
+package Seminar1.ex1_3;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -17,13 +17,14 @@ public class Program {
         Product apple = new Product("apple", 20);
         //System.out.println(apple);
 
-        LinkedList<Product> products = new LinkedList<>();
+        List<Product> products = new ArrayList<>();
         products.add(apple);
 
         VendingMachine vendingMachine = new VendingMachine();      
 
 
-        vendingMachine.putProduct( products);
+        vendingMachine.putProduct(products);
+
         //System.out.println(vendingMachine.putProduct((LinkedList<Product>) products).toString());
         System.out.println(vendingMachine.getProduct().toString());
         
