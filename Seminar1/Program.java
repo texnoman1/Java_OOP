@@ -1,9 +1,5 @@
-package ex1_3;
-
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
-
 
 
 // Реализуйте класс Товар, содержащий данные о товаре, и ТорговыйАвтомат,

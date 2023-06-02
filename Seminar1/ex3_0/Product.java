@@ -1,24 +1,51 @@
 package Seminar1.ex3_0;
-/*Задача 3 - Наследование
-📌 Сделайте класс Товар абстрактным, создайте нескольких наследников (к примеру: БутылкаВоды),
-сделайте интерфейсом ТорговыйАвтомат и реализуйте класс какого-то одного типа
-ТорговогоАвтомата (пример: ПродающийБутылкиВодыАвтомат)*/
 
-public abstract class Product {
-    // Реализуйте класс Товар, содержащий данные о товаре, и ТорговыйАвтомат,
-    // содержащий
-    // в себе методы initProducts (List <Product>) сохраняющий в себе список
-    // исходных продуктов и
-    // getProduct(String name)
+public class Product {
 
     protected String name;
-    protected int price;
+    protected String brand;
+    protected double price;
 
-    public abstract String getName();
+    public double getPrice(){
+        return price;
+    }
 
-    public abstract void setName(String name);
+    public void setPrice(double inputPrice){
+        checkPrice(inputPrice);
+    }
 
-    public abstract int getPrice();
+    public Product(){
+        this("product", 100);
+    }
 
-    public abstract void setPrice(int price);
+    public Product(String inputName, double inputPrice){
+        this("noname", inputName, inputPrice);
+    }
+
+    public Product(String brand, String name, double price){
+        checkPrice(price);
+        if (name.length() < 5){
+            this.name = "product";
+        }
+        else {
+            this.name = name;
+        }
+        this.brand = brand;
+
+
+    }
+
+    private void checkPrice(double inputPrice){
+        if (inputPrice <= 0){
+            price = 100;
+        }
+        else {
+            price = inputPrice;
+        }
+    }
+
+    public String displayInfo(){
+        return String.format("%s - %s- %f", brand, name, price);
+    }
+
 }
