@@ -16,15 +16,15 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         Controller controller = new Controller();
-        Teacher sensei = new Teacher("Van Li", 1968, Disciples.PROGRAMMING);
+        Teacher teacher = new Teacher("Александр Иванов", 1968, Disciples.PROGRAMMING);
 
-        Student katya = new Student("Katya jafsjfajjvna", 1999);
-        Student vasya = new Student("Vasya afahahfvich", 1985);
-        Student kirill = new Student("Kirill Zoomovich", 1932);
+        Student student1 = new Student("Марина Ильина", 1999);
+        Student student2 = new Student("Василий Петров", 1985);
+        Student student3 = new Student("Кирилл Сидоров", 1932);
 
-        List<Student> list = new ArrayList<>(Arrays.asList(katya, vasya, kirill));
+        List<Student> list = new ArrayList<>(Arrays.asList(student1, student2, student3));
 
-        controller.create(list,sensei);
+        controller.create(list, teacher);
         controller.read();
     }
 }

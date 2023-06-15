@@ -6,11 +6,11 @@ import model.Teacher;
 import java.util.List;
 
 public interface Service {
-    //public void create(List<Student> inputList, Teacher teacher);
-    //public void create(Student inputStudent);
+    public void create(List<Student> inputList, Teacher teacher);
+    public void create(Student inputStudent);
 
 
-    //public void read();
+   public void read();
 
 
 }

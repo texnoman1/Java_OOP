@@ -22,7 +22,7 @@ public class DataServiceImpl implements Service {
         this.studentList.addAll(inputList);
         this.teacher = teacher;
     }
-
+ 
     @Override
     public void create(Student inputStudent) {
         this.studentList.add(inputStudent);

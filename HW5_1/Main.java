@@ -1,5 +1,9 @@
 package HW5_1;
 
+
+
+import HW5_1.model.Student;
+import HW5_1.service.Service;
 import HW5_1.view.View;
 
 /*— Создать класс УчебнаяГруппа, содержащий в себе поля Преподаватель и список Студентов;
@@ -10,9 +14,15 @@ import HW5_1.view.View;
 
 public class Main {
   public static void main(String[] args) {
+   final View firstName;
+   final View lastName; 
+    Service f = new Service();
+    View v = new View();
+    System.out.println(v.getFirstName1());
+    Student student1 = new Student(v.getFirstName1(), v.getLastName1(), 1);
 
-    View firstName = new View();
-    System.out.println(firstName.getFirstName1());
-    
+    System.out.println(student1);
+    f.createStudent();
+
   }  
 }

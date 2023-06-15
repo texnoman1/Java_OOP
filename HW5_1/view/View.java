@@ -4,6 +4,11 @@ public class View {
    private String firstName1 = "Ivan";
    private String lastName1 = "Ivanov";
 
+   public View () {
+      
+   }
+   
+
    public String getFirstName1() {
     return firstName1;
 }
