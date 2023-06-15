@@ -9,6 +9,8 @@ public Student( String firstName, String lastName, Integer idStudent) {
         this.idStudent = idGenerator++;
     }
 
+    
+
     @Override
     public String toString() {
         return firstName + " " + lastName + " " + idStudent;

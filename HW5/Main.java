@@ -20,9 +20,13 @@ public class Main {
 
         Student student1 = new Student("Марина Ильина", 1999);
         Student student2 = new Student("Василий Петров", 1985);
-        Student student3 = new Student("Кирилл Сидоров", 1932);
+        Student student3 = new Student("Кирилл Сидоров", 1982);
+
+        System.out.println(student1);
 
         List<Student> list = new ArrayList<>(Arrays.asList(student1, student2, student3));
+
+        
 
         controller.create(list, teacher);
         controller.read();

@@ -24,7 +24,7 @@ public class Service {
 
    
    public void createStudent() {
-    Student student1 = new Student(view.getFirstName1(), " ", 1);
+    Student student1 = new Student("gtnz _", " ", 1);
     System.out.println(student1);
    }
 

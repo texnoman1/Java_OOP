@@ -3,9 +3,6 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 
-import HW5_1.model.Student;
-import HW5_1.model.Teacher;
-
 public class StudyGroup {
     List<StudyGroup>  studyGroupList;
     Teacher teacher;
