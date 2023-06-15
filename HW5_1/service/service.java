@@ -9,7 +9,7 @@ import model.Teacher;
 public class Service {
    private View firstName1;
    private View lastName1;
-   Student student;
+   //Student student;
    View view;
    View view1;
 
@@ -17,14 +17,11 @@ public class Service {
         
     }
 
-   public void create() {
-        
-        this.student = student;
-   }
+   
 
    
    public void createStudent() {
-    Student student1 = new Student("gtnz _", " ", 1);
+    Student student1 = new Student(view.getFirstName1(), " bfd");
     System.out.println(student1);
    }
 

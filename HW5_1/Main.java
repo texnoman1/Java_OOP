@@ -14,17 +14,17 @@ import HW5_1.view.View;
 
 public class Main {
   public static void main(String[] args) {
-   final View firstName;
-   final View lastName; 
-    Service f = new Service();
+    
+    Service s = new Service();
     View v = new View();
     System.out.println(v.getFirstName1());
-    Student student1 = new Student(v.getFirstName1(), v.getLastName1(), 1);
-    Student student2 = new Student("fff", "vvv", 1);
+
+    Student student1 = new Student(v.getFirstName1(), v.getLastName1());
+    Student student2 = new Student("fff", "vvv");
 
     System.out.println(student1);
     System.out.println(student2);
-    f.createStudent();
+    s.createStudent();
 
   }  
 }
