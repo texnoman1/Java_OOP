@@ -1,4 +1,4 @@
-package Seminar4;
+package HW6;
 
 import java.time.LocalDate;
 
@@ -7,7 +7,7 @@ public class Student extends User implements Comparable<Student>{
 
 
 
-    public Student(String firstName, String secondName,
+    public Student(long studentId,String firstName, String secondName,
                    String patronymic, LocalDate dateOfBirth) {
         super(firstName, secondName, patronymic, dateOfBirth);
         this.studentId = studentId;

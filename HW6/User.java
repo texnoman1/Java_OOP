@@ -1,14 +1,14 @@
-package Seminar4;
+package HW6;
 
 import java.time.LocalDate;
 
-public abstract class User {
+public class User {
     private String firstName;
     private String secondName;
     private String patronymic;
     private LocalDate dateOfBirth;
 
- public User(String firstName, String secondName, String patronymic, LocalDate dateOfBirth) {
+    public User(String firstName, String secondName, String patronymic, LocalDate dateOfBirth) {
         this.firstName = firstName;
         this.secondName = secondName;
         this.patronymic = patronymic;
