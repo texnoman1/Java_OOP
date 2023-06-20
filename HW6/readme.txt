@@ -1,13 +1,8 @@
-package HW6;
+Взять реализованный код в рамках семинара 4 и продемонстрировать применение принципов, усвоенных на семинаре.
+Нужно в проекте прокомментировать участки кода, которые рефакторим, какой принцип применяем и почему.
 
+Формат сдачи: ссылка на гитхаб проект
 
-import java.time.LocalDate;
-import java.util.Comparator;
-import java.util.LinkedList;
-import java.util.TreeSet;
-
-/*- Взять реализованный код в рамках семинара 4 и продемонстрировать применение принципов, усвоенных на семинаре.
-Нужно в проекте прокомментировать участки кода, которые рефакторим, какой принцип применяем и почему. */
 
 /* ЗАДАНИЕ 6:
 
@@ -25,21 +20,3 @@ import java.util.TreeSet;
     класс User соответствует принципу инверсий зависимостей.  От этого класса зависят Student и Teacher, а он от них не зависит.
 
    */
-
-public class Main {
-    public static void main(String[] args) {
-        /*Student oneUser = new Student("Ян", "Янов", "Янович", LocalDate.now());;
-        Student twoUser = new Student("Петров", "Петр", "Петрович", LocalDate.now());
-        Student threeUser = new Student("Сидоров", "Семен", "Петрович", LocalDate.now());            
-
-        TreeSet treeSet = new TreeSet(new UserComparator());
-        treeSet.add(oneUser);
-        treeSet.add(twoUser);
-        treeSet.add(threeUser);        
-
-        System.out.println(treeSet);*/
-
-        Service service = new Service();
-        service.RunIt();
-    }
-}

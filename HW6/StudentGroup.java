@@ -1,37 +1,44 @@
 package HW6;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class StudentGroup implements Iterable<Student>{
-    private List<Student> students;
-    private Teacher teacher;
+    private List<Student> students = new ArrayList<>();
+    public String stud;
+    //private Teacher teacher;
 
     public StudentGroup(List<Student> students) {
         this.students = students;
-        this.teacher = teacher;
+        //this.teacher = teacher;
     }
 
     public List<Student> getStudents() {
         return students;
     }
 
+    
+    
+
     public void setStudents(List<Student> students) {
         this.students = students;
     }
 
-    public Teacher getTeacher() {
-        return teacher;
-    }
 
-    public void setTeacher(Teacher teacher) {
-        this.teacher = teacher;
-    }
+
+    //public Teacher getTeacher() {
+       // return teacher;
+    //}
+
+    //public void setTeacher(Teacher teacher) {
+        //this.teacher = teacher;
+    //}
 
     @Override
     public String toString() {
         return "StudentGroup{" +
                "students=" + students +
-               ", teacher=" + teacher +
+               ", teacher="  +
                '}';
     }
 
